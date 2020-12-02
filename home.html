@@ -10,92 +10,99 @@
 </head>
 
 <body>
-    <div class="column" style="background-color: #5DAC7D">
-        <div class="row" style="background-color: #5DAC7D; height: 100vh">
+    <div class="column" style="background-color: darkslategray">
+        <div class="row" style="background-color:darkslategray; height: 100vh">
             <div class='double-column'>
-                <h1 class="superheading" style="color: white;">A/B testing</h1>
+                <h1 class="superheading" style="color: white;">Development Writeup</h1>
             </div>
             <div class="column" style="height: 100vh">
-                <p class="subtitle3" style="font-style: italic; max-width: 300px; align-self: flex-end;"> The goal of this assignment is to perform an A/B test and statistical analysis to gather insight into two different UI designs.
+                <p class="subtitle3" style="font-style: italic; max-width: 300px; align-self: flex-end;color: white">
+                    Get even more comfortable with React by creating a list interface!
 
                 </p>
                 <h1 class="superheading" style="color: tomato; padding-left: 0">10/28/20</h1>
                 <img class="image" src="./images/garden-combo.jpg" />
-                <p class="subtitle3" style="font-style: italic; max-width: 300px; align-self: flex-end;"> All photos used in this assignment are credited to UIUX class images.
+                <p class="subtitle3" style="font-style: italic; max-width: 300px; align-self: flex-end; color: white"> I
+                    have chosen to create a beverages website with filtering, sorting and a cart function.
 
             </div>
         </div>
         <!-- part 0 header -->
         <div class='row'>
             <div class="column" style="background-color: white">
-                <h1 class="heading3">Part 0: Making & Deploying the Websites
+                <h1 class="heading3"> Goal of the application and value to a user
+
                 </h1>
             </div>
             <div class="division"> </div>
 
             <div class='double-column' style="background-color: white">
                 <!-- low fidelity -->
-                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Design A:
+                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Skål & Bones: Store list with filtering, sorting,
+                    and Cart function
                 </h1>
-                <img class="image" src="./images/A.png" style="align-self: center" />
-                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Design B:
-                </h1>
-                <img class="image" src="./images/B.png" style="align-self: center" />
-                <a href="https://dry-shore-49338.herokuapp.com/">
-                    <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Check out the cactus shop here:
-                    </h1>
-                </a>
+                <p class="subtitle3" style="max-width: 66%;"> I have created a website listing of
+                    beverage recipes. One of the key data pieces shown is the instructions for making the beverage.
+                    Users can find their
+                    desired drink through filtering by liquor type and ingredients, and add to cart. The aggregator in
+                    the
+                    cart showing the total number of ingredients could be helpful for a shopping trip, in the case that
+                    the user wants to make a series of drinks that week and wants to plan ahead for the ingredients she
+                    will need. The next-step
+                    feature would be for the ingredients list to have specific units of each ingredient.</p>
 
             </div>
         </div>
         <!-- part 1 header -->
         <div class='row'>
             <div class="column" style="background-color: whitesmoke; border-right:3px black">
-                <h1 class="heading3">Part 1: Metrics and Creating Sets of Hypotheses
+                <h1 class="heading3">Usability principles considered
                 </h1>
             </div>
             <div class="division"> </div>
             <div class='double-column' style="background-color: whitesmoke">
-                <!-- choosing a website -->
-                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">I will run statistical tests for these two metrics: Time to Completion and Return Rate. Time to Completion is the time it takes to complete the desired task (in this case, order cacti) Return Rate is the number of times a user returned
-                    to the page.
+                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Basic Design principles
                 </h1>
-                <p class="subtitle3" style="max-width: 66%;"> Null hypothesis (Time to completion): there is no significant difference between page A and B for time to completion, and any observed difference being due to sampling or experimental error.
+                <p class="subtitle3" style="max-width: 66%;"> I wanted to go with a more simple design interface, with
+                    neutral colors except for the blue of the 'my order' cart that directs viewers eyes to one of most
+                    important components on the page. The overflowing grid format suggests that more drinks can be
+                    discovered by scrolling. The fixed navigation bar at the top means that it can be accessed at any
+                    point in the page.</p>
+                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Interface principles: is it
+                    easy for users to tell what actions are possible?
+                </h1>
+                <p class="subtitle3" style="max-width: 66%;">I think the possiblities of actions are
+                    clearly communicated with the language and labeling; the one confusing label could be the
+                    'number of ingredient units' label in the cart, since the term 'units' is not extremely
+                    clear. The arrows on the drop down menu are clear affordances for additional elements that
+                    can be clicked.</p>
+                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Interface principles: is it
+                    easy for users to tell what state the system is in and
+                    perform the actions they want to perform?
+                </h1>
+                <p class="subtitle3" style="max-width: 66%;"> The state of the cart is clearly shown,with scrolling
+                    capabilities. Buttons
+                    that change color when they are hovered over provide clear feedback for users to click on them. A
+                    next step would be to have a clear panel under the navigation bar that shows the 'state' of the
+                    filters; for example, if its on 'rum' or 'lime' to remind users what state they are in. </p>
 
-                </p>
-                <p class="subtitle3" style="max-width: 66%;"> Alternative Hypothesis (Time to completion): Design A will take less time to complete than Design B. This is because I believe the horizontal layout allows visitors to immediately see all cacti available to be bought, allowing them to
-                    make quicker choices.
-
-                </p>
-                <p class="subtitle3" style="max-width: 66%;"> Null hypothesis (Return rate): there is no significant difference between page A and B for return rate, and any observed difference being due to sampling or experimental error.
-
-                </p>
-                <p class="subtitle3" style="max-width: 66%;"> Alternate Hypothesis (return rate): Design A will have a greater return rate than Design B. This is because I believe the cart situated in the middle invites greater shopping tendencies and customers will want MORE cacti!
-
-                    <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Initial predictions regarding the hypothesis:
-                    </h1>
-                </p>
-                <p class="subtitle3" style="max-width: 66%;"> Entering into this assignment, I know that I do not have enough data samples (n
-                    < 25) for this to be statistically significant. With the amount of data I have, it will also be very hard to have a p-value of < 0.05, which is required to reject the null. Of the two tests we are running however, I think the time to completion test will
-                        have higher probability of rejecting the null just because the reformatting of the page should make adding items to cart much easier. In regards to return rate, it seems like a rather arbitrary metric and would instead rely on redesigning
-                        the shopping cart interface, which is something that I did not do. </p>
             </div>
         </div>
         <!-- part 2 header -->
         <div class='row'>
             <div class="column" style="background-color: white">
-                <h1 class="heading3">Part 2: Collecting Data and Conclusion
+                <h1 class="heading3"> Links to React App GitHub Repo and deployed React App website
                 </h1>
             </div>
             <div class="division"> </div>
 
             <div class='double-column' style="background-color: white">
-                <!-- low fidelity -->
-                <h1 class="subtitle2" style="font-weight: bold; font-style:oblique">Data collection process: To collect data, I sent the link to my peers. My Heroku link will randomly select interface A or B for users to complete. Regardless of which version a user gets, their task should be to fill their cart with at
-                    least $150 of cacti/succulents.
-                </h1>
-                <img class="image" src="./images/infograph.png" style="align-self: center" />
-
+                <a class="subtitle2" href="https://github.com/allyszhu/development"
+                    style="font-weight: bold; font-style:oblique"> <br> Link to Github Repo > <br>
+                </a>
+                <div><a href="https://skal-and-bones.herokuapp.com/"><img class="image" src="./images/infograph.png"
+                            style="align-self: center" /></a>
+                </div>
             </div>
         </div>
 </body>
